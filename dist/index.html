@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" href="images/src/favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="body">
+  <div class="wrapper">
+<header class="header" id="fixedHeader">
+  <nav class="header__nav" id="fixedMenu">
+    <div class="header__inner">
+      <picture><source srcset="images/dist/logo.avif" type="image/avif"><source srcset="images/dist/logo.webp" type="image/webp"><img class="header__logo" src="images/dist/logo.png" alt="logo" width="80" height="80"></picture>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#body">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#about">About me</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#skills">Skills</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <button class="burger" type="button">
+        <span class="burger__span"></span>
+        <span class="sr-only">Open/Close menu</span>
+      </button>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="header__info">
+      <h1 class="header__title">
+        Arhipov <br> Michael
+      </h1>
+      <div class="header__biography">
+        Web programmer <br>
+        30 years old, Ukraine/Odesa
+      </div>
+    </div>
+    <picture><source srcset="images/dist/header-img.webp" type="image/avif"><source srcset="images/dist/header-img.webp" type="image/webp"><img class="header__img" src="images/dist/header-img.webp" alt="картинка для фона" width="944" height="387"></picture>
+  </div>
+</header>
+
+<main>
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="about__title title">
+        About me
+      </h2>
+      <div class="about__text">
+        <p>
+          Hi, I'm Michael – html/css developer from Odesa. 
+          I'm interested Web development and everything connected with it.
+        </p>
+        <p>
+          I am a beginner developer I have non-commercial experience in 
+          layout of various kinds of sites. I also took coursу on layout from vadymprokopchuk.
+        </p>
+        <p>
+          I also suggest that you familiarize yourself with some of the sites that I made up.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="skills__title title">Skills</h2>
+      <span class="skills__desc">In work, I use tools such as</span>
+      <ul class="skills__items">
+        <li class="skills__item">
+          <img class="skills__img" src="images/dist/icon/html.svg" alt="html">
+          <h3 class="skills__name">HTML5</h3>
+          <div class="skills__rating">
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="skills__item">
+          <img class="skills__img" src="images/dist/icon/css.svg" alt="css3">
+          <h3 class="skills__name">CSS3</h3>
+          <div class="skills__rating">
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star skills__star--inactive" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="skills__item">
+          <img class="skills__img" src="images/dist/icon/js.svg" alt="js">
+          <h3 class="skills__name">javascript</h3>
+          <div class="skills__rating">
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star skills__star--inactive" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <svg class="skills__star skills__star--inactive" width="26" height="26">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <h2 class="portfolio__title title">Portfolio</h2>
+        <ul class="portfolio__items">
+          <li class="portfolio__item">
+            <h3 class="portfolio__item-title">AvSale-site</h3>
+            <div class="swiper portfolio__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/index.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/index.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/index.jpg" alt="Index page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/index.html">Home page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/service-page.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/service-page.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/service-page.jpg" alt="services page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/services-page.html">Services page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/catalog-page.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/catalog-page.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/catalog-page.jpg" alt="catalog page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/catalog-page.html">Catalog page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/question.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/question.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/question.jpg" alt="question page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/question.html">Question page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/auctionSheet.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/auctionSheet.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/auctionSheet.jpg" alt="auction sheet page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/auctionSheet.html">Auction sheet page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/constructor.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/constructor.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/constructor.jpg" alt="constructor page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/constructor.html">Constructor page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/aboutUs.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/aboutUs.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/aboutUs.jpg" alt="about us page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/aboutUs.html">About us page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/comments-page.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/comments-page.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/comments-page.jpg" alt="comments page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/comments-page.html">Comments page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/avsale/contacts-page.avif" type="image/avif"><source srcset="images/dist/portfolio/avsale/contacts-page.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/avsale/contacts-page.jpg" alt="contacts page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/AvSale-site/dist/contacts-page.html">Contacts page</a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__item-title">First-portfolio</h3>
+            <div class="swiper portfolio__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/first-portfolio/index.avif" type="image/avif"><source srcset="images/dist/portfolio/first-portfolio/index.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/first-portfolio/index.jpg" alt="Index page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/first-portfolio/index.html">Home page</a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__item-title">Fresok-site</h3>
+            <div class="swiper portfolio__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/freshok/index.avif" type="image/avif"><source srcset="images/dist/portfolio/freshok/index.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/freshok/index.jpg" alt="Index page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/fresok-site/dist/index.html">Home page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/freshok/catalog-index.avif" type="image/avif"><source srcset="images/dist/portfolio/freshok/catalog-index.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/freshok/catalog-index.jpg" alt="Catalog page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/fresok-site/dist/catalog-index.html">Catalog page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/freshok/product-index.avif" type="image/avif"><source srcset="images/dist/portfolio/freshok/product-index.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/freshok/product-index.jpg" alt="Product page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/fresok-site/dist/product-index.html">Product page</a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__item-title">Animals-hospital</h3>
+            <div class="swiper portfolio__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/home.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/home.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/home.jpg" alt="Home page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/index.html">Home page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/cabinet.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/cabinet.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/cabinet.jpg" alt="personal account" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/cabinet.html">personal account page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/product.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/product.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/product.jpg" alt="product page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/products-page.html">product page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/collective.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/collective.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/collective.jpg" alt="collective page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/collective.html">collective page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/history.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/history.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/history.jpg" alt="history page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/history.html">history page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/news.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/news.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/news.jpg" alt="news page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/news.html">news page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/contacts.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/contacts.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/contacts.jpg" alt="contacts page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/contacts-page.html">contacts page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/blog.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/blog.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/blog.jpg" alt="blog page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/blog.html">blog page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/design.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/design.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/design.jpg" alt="design page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/design.html">design page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/doctor.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/doctor.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/doctor.jpg" alt="doctor page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/doctor-page.html">doctor page</a>
+                </div>
+                <div class="swiper-slide">
+                  <picture><source srcset="images/dist/portfolio/animals-hospital/enroll.avif" type="image/avif"><source srcset="images/dist/portfolio/animals-hospital/enroll.webp" type="image/webp"><img class="portfolio__slider-img" src="images/dist/portfolio/animals-hospital/enroll.jpg" alt="enroll page" width="970" height="510"></picture>
+                  <a class="portfolio__slider-link" href="https://krad24.github.io/animals-hospital/dist/enroll.html">enroll page</a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </li>
+        </ul>
+      </h2>
+    </div>
+  </section>
+</main>
+
+<footer class="footer section" id="contacts">
+
+    <div class="container">
+
+      <h2 class="footer__title title">Contacts</h2>
+
+      <span class="footer__text">Want to know more or just chat? You are welcome!</span>
+
+      <a class="footer__link" href="#">Send message</a>
+
+      <ul class="footer__social social">
+
+        <li class="social__item">
+
+          <a class="social__link" href="t.me/Krad24">
+
+            <svg width="40" height="40">
+
+              <use xlink:href="images/sprite.svg#telegram"></use>
+
+            </svg>
+
+          </a>
+
+        </li>
+
+        <li class="social__item">
+
+          <a class="social__link" href="https://ua.linkedin.com/">
+
+            <svg width="40" height="40">
+
+              <use xlink:href="images/sprite.svg#linkedIn"></use>
+
+            </svg>
+
+          </a>
+
+        </li>
+
+        <li class="social__item">
+
+          <a class="social__link" href="https://www.instagram.com/krad24/">
+
+            <svg width="40" height="40">
+
+              <use xlink:href="images/sprite.svg#instagram"></use>
+
+            </svg>
+
+          </a>
+
+        </li>
+
+      </ul>
+
+      <blockquote class="footer__blockquote">Like me on <br> Telegram, LinkedIn, Instagram</blockquote>
+
+    </div>
+
+</footer>
+</div>
+<script src="js/main.min.js"></script>
+</body>
+</html>
+
