@@ -1,0 +1,176 @@
+.about {
+  background-color: #F6F6F6;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    max-width: 490px;
+    margin: 0 auto;
+    font-weight: 500;
+
+    p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.skills {
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include r($sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__desc {
+    display: block;
+    margin-bottom: 50px;
+
+    @include r($sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+
+    @include r($md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @include r($sm) {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    @include r($md) {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        grid-column: 1/-1;
+      }
+    }
+
+    @include r($sm) {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+
+    
+  }
+
+  &__img {
+    margin-bottom: 25px;
+
+    @include r($sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #828282;
+    margin-bottom: 40px;
+
+    @include r($sm) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__star {
+    fill: #070707; 
+   
+    &--inactive {
+      fill: #E5E5E5;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+.portfolio {
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+
+    @include r($md) {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    padding-top: 5px;
+  }
+
+  &__slider-img {
+    margin-bottom: 46px;
+
+    @include r($md) {
+      object-fit: contain;
+      height: auto;
+    }
+
+    @include r($sm) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__slider-link {
+    display: block;
+    font-size: 18px;
+    text-decoration-line: underline;
+    transition: color .3s, transform .4s;
+
+    &:hover {
+      color: #8D1010;
+      transform: scale(1.2);
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    @include r($md) {
+      display: none;
+    }
+  }
+}
+
+
+
+
+

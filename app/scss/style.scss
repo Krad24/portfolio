@@ -1,0 +1,16 @@
+@import "reset";
+@import "mixins";
+@import "fonts";
+@import "vars";
+@import "libs";
+@import "global";
+
+@import "components/menu.scss";
+@import "components/burger.scss";
+@import "components/social.scss";
+@import "pages/header/header.scss";
+@import "pages/home/home.scss";
+@import "pages/footer/footer.scss";
+
+
+
