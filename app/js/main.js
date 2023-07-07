@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
 })
 
 function fun () {
-  if (window.scrollY >= 0){
+  if (window.scrollY >= 15){
     fixedMenu.classList.add(`${fixedMenu.classList[0]}--fixed`);
     nav.classList.add(`${nav.classList[0]}--fixed`)
 
