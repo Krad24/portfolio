@@ -1,5 +1,29 @@
 "use strict"
 
+// sticky menu
+
+const fixedMenu = document.getElementById('fixedMenu');
+const nav = document.getElementById('fixedHeader');
+
+document.addEventListener('scroll', () => {
+  console.log(window.scrollY);
+  setTimeout(fun, 10);
+})
+
+function fun () {
+  if (window.scrollY >= 0){
+    fixedMenu.classList.add(`${fixedMenu.classList[0]}--fixed`);
+    nav.classList.add(`${nav.classList[0]}--fixed`)
+
+  } else {
+    fixedMenu.classList.remove(`${fixedMenu.classList[0]}--fixed`)
+    nav.classList.remove(`${nav.classList[0]}--fixed`)
+  }
+}
+
+//end sticky menu
+
+
 // sliders
 
 const swiper2 = new Swiper('.portfolio__slider', {
@@ -21,28 +45,6 @@ const swiper2 = new Swiper('.portfolio__slider', {
   
 });
 
-// sticky menu
-
-const fixedMenu = document.getElementById('fixedMenu');
-const nav = document.getElementById('fixedHeader');
-const classMenu = fixedMenu.classList.value;
-
-window.addEventListener('scroll', () => {
-  setTimeout(fun, 200);
-})
-
-function fun () {
-  if (window.pageYOffset > 10){
-    fixedMenu.classList.add(`${classMenu}--fixed`);
-    nav.classList.add('header--fixed')
-
-  } else {
-    fixedMenu.classList.remove(`${classMenu}--fixed`)
-    nav.classList.remove('header--fixed')
-  }
-}
-
-//end sticky menu
 
 //burger menu
 
@@ -55,14 +57,6 @@ burgerBtn.addEventListener('click', (e)=> {
   burgerBtn.classList.toggle(`${burgerBtn.classList[0]}--close`);
   burgerMenu.classList.toggle(`${burgerMenu.classList[0]}--active`);
   body.classList.toggle('lock');
-  
-  if (e.target.classList.value == 'lock') {
-    body.addEventListener('click', ()=> {
-      body.classList.remove('lock');
-      burgerBtn.classList.remove(`${burgerBtn.classList[0]}--close`);
-      burgerMenu.classList.remove(`${burgerMenu.classList[0]}--active`);
-    })
-  }
 })
 
 body.addEventListener('click', (e)=> {

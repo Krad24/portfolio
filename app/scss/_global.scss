@@ -37,7 +37,7 @@ body {
 
 .wrapper {
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -58,10 +58,6 @@ body {
 
   @include r($md) {
     padding: 80px 0;
-  }
-
-  @include r($sm) {
-    padding: 50px 0;
   }
 }
 
